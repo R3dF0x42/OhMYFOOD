@@ -1,0 +1,21 @@
+@mixin bgd-img($image) {
+    background-image: url($image);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @mixin flexbox($direction: row, $wrap: wrap, $justify: center, $align: center) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  
+  @mixin computers {
+    @media (min-width: 1290px) {
+      @content;
+    }
+  }
+  
+  
